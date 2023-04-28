@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+}
+
+h1.page-title:after {
+  content: '';
+  height: 0.25rem;
+  background: #49a6e9;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+  display: block;
+  margin-top: 9px;
+}
+
+h1.page-title {
+  color: #102a42;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.tour {
+  background: #fff;
+  background: var(--clr-white);
+  border-radius: 0.25rem;
+  border-radius: var(--radius);
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  box-shadow: var(--light-shadow);
+  transition: all .3s linear;
+  transition: var(--transition);
+  position: relative;
+}
+
+.tour-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  gap: 2rem;
+  align-items: start;
+}
+
+.tour img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+.tour h4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #49a6e9;
+  background: #ebf7ff;
+  padding: 0.5rem 0.75rem;
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.tour-info {
+  padding: 1.5rem 2rem;
+}
+
+.delete-button {
+  display: block;
+  width: 200px;
+  margin: 1rem auto 0;
+  color: #bb2525;
+  letter-spacing: .1rem;
+  background: transparent;
+  border: 1px solid #bb2525;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.read-more {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: #49a6e9;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
